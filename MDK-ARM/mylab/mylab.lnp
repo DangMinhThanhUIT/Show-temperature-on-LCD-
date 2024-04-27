@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+".\mylab\startup_stm32f103xb.o"
+".\mylab\i2c-lcd.o"
+".\mylab\main.o"
+".\mylab\stm32f1xx_it.o"
+".\mylab\stm32f1xx_hal_msp.o"
+".\mylab\ftoa.o"
+".\mylab\stm32f1xx_hal_gpio_ex.o"
+".\mylab\stm32f1xx_hal_i2c.o"
+".\mylab\stm32f1xx_hal.o"
+".\mylab\stm32f1xx_hal_rcc.o"
+".\mylab\stm32f1xx_hal_rcc_ex.o"
+".\mylab\stm32f1xx_hal_gpio.o"
+".\mylab\stm32f1xx_hal_dma.o"
+".\mylab\stm32f1xx_hal_cortex.o"
+".\mylab\stm32f1xx_hal_pwr.o"
+".\mylab\stm32f1xx_hal_flash.o"
+".\mylab\stm32f1xx_hal_flash_ex.o"
+".\mylab\stm32f1xx_hal_exti.o"
+".\mylab\stm32f1xx_hal_tim.o"
+".\mylab\stm32f1xx_hal_tim_ex.o"
+".\mylab\system_stm32f1xx.o"
+--strict --scatter ".\mylab\mylab.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "mylab.map" -o .\mylab\mylab.axf
